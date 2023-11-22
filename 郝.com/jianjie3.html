@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		.page-jianjie {
+			background-image: url(./img/R-C7.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			width: 1460px;
+			height: 780px;
+			z-index: 0;
+			z-index: -10;
+		}
+
+		.page1 {
+			display: block;
+		}
+		
+		.fanhui{
+			width: 100px;
+			height: 50px;
+			border-radius: 10%;
+			cursor: pointer;
+		}
+		
+		.fanhui img{
+			width: 50px;
+		}
+
+		.title-jianjie {
+			text-align: center;
+			font-size: 50px;
+			font-family: 'Times New Roman', Times, serif;
+			position: relative;
+			top: -80px;
+		}
+		.jianjie-logo{
+			background-color: #797979;
+			position: absolute;
+			top: 100px;
+			left: 80px;
+			width: 300px;
+			height: 60px;
+			border-radius: 20%;
+		}
+		.jianjie-logo p{
+			color: aliceblue;
+			font-size: 20px;
+			text-align: center;
+		}
+		.renwu {
+			display: block;
+		}
+
+		.renwu img {
+			position: absolute;
+			top: 245px;
+			left: 50px;
+			width: 350px;
+		}
+
+		.jianjie {
+			background-color: aliceblue;
+			position: absolute;
+			left: 450px;
+			top: 100px;
+			height: 380px;
+			width: 300px;
+			opacity: 0;
+			border-radius: 5%;
+			-webkit-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			-moz-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			animation: rise 4s cubic-bezier(0.19,1,0.22,1).25s forwards;
+		}
+		@keyframes rise{
+		  0% {opacity: 0;transform: translate3d(0,100%,0);}
+		  50%{opacity: 1}
+		  100%{opacity: 1;transform: translate3d(0,450rpx,0);}
+		}
+
+		.fazhan {
+			background-color: aliceblue;
+			position: absolute;
+			top: 100px;
+			right: 30px;
+			height: 650px;
+			width: 650px;
+			opacity: 0;
+			border-radius: 2%;
+			-webkit-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			-moz-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			animation: rise 6s cubic-bezier(0.19,1,0.22,1).25s forwards;
+		}
+		@keyframes rise{
+		  0% {opacity: 0;transform: translate3d(0,100%,0);}
+		  50%{opacity: 1}
+		  100%{opacity: 1;transform: translate3d(0,450rpx,0);}
+		}
+
+		.houtui {
+			position: absolute;
+			top: 400px;
+			width: 50px;
+			cursor: pointer;
+		}
+
+		.qianjin {
+			position: absolute;
+			right: 0px;
+			top: 400px;
+			width: 50px;
+			cursor: pointer;
+		}
+
+		.box {}
+
+		.jianjie-img {}
+
+		.jianjie-img img {
+			position: absolute;
+			top: 500px;
+			left: 200px;
+			width: 450px;
+			height: 250px;
+			border-radius: 10%;
+		}
+
+		.left {
+			background-color: aliceblue;
+			position: absolute;
+			top: 600px;
+			left: 200px;
+			width: 50px;
+			opacity: 0.8;
+			cursor: pointer;
+			-webkit-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			-moz-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+		}
+
+		.right {
+			background-color: aliceblue;
+			position: absolute;
+			top: 600px;
+			left: 600px;
+			width: 50px;
+			opacity: 0.8;
+			cursor: pointer;
+			-webkit-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			-moz-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+		}
+	</style>
+	<body>
+		<div class="page-jianjie">
+			<div class="page1">
+				<a href="./index.html"><button class="fanhui"><img src="./img/返回.png" alt=""></button></a>
+				<p class="title-jianjie">LAMBORGHINI</p>
+				<div class="jianjie-logo"><p>费鲁吉欧·兰博基尼</p></div>
+				<div class="renwu" id="page1">
+					<img src="./img/9345d688d43f8794deb03185d81b0ef41ad53ac9.webp" alt="">
+				</div>
+				<div class="jianjie">
+					<p>个人简介：</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;费鲁吉欧·兰博基尼（Ferrucio Lamborghini，1916年4月28日-1993年2月20日），兰博基尼汽车公司的创始人，就像奔驰（卡尔·弗里特立奇·本茨）、福特、保时捷等人一样，在汽车制造业也享有盛誉。费鲁吉欧·兰博基尼一生致力于提高赛车的性能以不断夺取桂冠。
+					</p>
+				</div>
+				<div class="fazhan">
+					<p>发展历程：</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;费鲁齐欧·兰博基尼在意大利战后制造了一系列的拖拉机、燃油燃烧器及空调系统，从而为自己的品牌树立了声望，并于1963年在意大利Sant 'Agata 成立了自己的车厂。据说有一次兰博基尼这个跑车迷打算和恩佐·法拉利（Enzo Ferrari）会面，想对其产品提些改进建议。然而法拉利并无意听取一个拖拉机制造商的意见。虽未经考证，这则轶事始终在圈内流传。不论事实真相如何，一年后首款兰博基尼跑车——兰博基尼350GTV——面世了，它标志着一段令人称奇的成功之路的开始。没人能想到日后世界上的一些超级名流会竞相购买兰博基尼，长长的名册中有法兰克·辛纳屈（Frank Sinatra）和保罗·麦卡特尼（Paul McCartney）。所有记载各个时代最成功跑车的编年史中无一不载录了兰博基尼的两款著名跑车“ Countach”和“ Miura”。
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;经历了一系列坎坷波折之后，费鲁吉欧·兰博基尼终于在1972年从公司隐退。兰博基尼（不管是人还是公司）从来不缺乏想象力，但一直缺少稳固的资金支持。实际上，兰博基尼在1980年破产，意大利商人米兰姆兄弟收购了该公司。后来，兰博基尼还数次易主，其中也包括克莱斯勒汽车公司。但它们没有表现出对兰博基尼真正的爱好者关注。实际上，兰博基尼和奥迪一直深有渊源，它们以前合作追求铝质底盘的构造。这种关系终于在1998年成就姻缘，兰博基尼加入大众汽车集团。在奥迪的资助下，兰博基尼有了自己的管理班子来运作。在奥迪的管理下，该厂在2003年分别推出了Murciélago概念车和Gallardo。
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;接下来兰博基尼就不择手段了——从法拉利和玛莎拉蒂挖了大批人才，包括著名的贝萨里尼（Giotto Bizzarini），法拉利250 GTO的设计师，他在20世纪意大利车坛的影响力甚至高于恩佐和佛瑞肯，他设计的3.5升360马力的V-12发动机成为兰博基尼挑战法拉利的旗帜。贝萨里尼也够个性的，他叛离法拉利的原因是恩佐法拉利拒绝让他使用独立后悬挂，多年后恩佐法拉利对放走贝萨里尼追悔莫及！
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1963年10月26日，意大利都灵车展，兰博基尼推出他的第一部作品350GTV（底盘编号0100），极速280公里/小时，仅生产一辆。终于，一个恶魔诞生了，一个走特立独行路线的恶魔，这个恶魔让意大利最具声望的设计大师甘迪尼为其倾注一生的心血。</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;兰博基尼先生于1993年去世.
+					</p>
+				</div>
+				<div class="box">
+					<div class="jianjie-img">
+						<img src="./images/bba1cd11728b4710ace479e2c2cec3fdfd0323d0.webp" alt="">
+					</div>
+				</div>
+				<img class="left" src="./img/后退.png" alt="">
+				<img class="right" src="./img/前进 (1).png" alt="">
+				<script>
+					// 定义对象
+					const obj = [{
+							url: './images/bba1cd11728b4710ace479e2c2cec3fdfd0323d0.webp'
+						},
+						{
+							url: './images/3812b31bb051f81900a3b267dbb44aed2e73e71d.webp'
+						},
+						{
+							url:'./images/a2cc7cd98d1001e9e95f8823ba0e7bec54e797bf.webp'
+						}
+
+					]
+					const img = document.querySelector('.jianjie-img img')
+					const right = document.querySelector('.right')
+					const left = document.querySelector('.left')
+					let pic = document.querySelector('.box')
+					let i = 0
+					let time = 0
+					right.addEventListener('click', function() {
+						i++
+						if (i >= obj.length) {
+							i = 0
+						}
+						img.src = obj[i].url
+					})
+
+					left.addEventListener('click', function() {
+						i--
+						if (i < 0) {
+							i = obj.length
+						}
+						img.src = obj[i].url
+					})
+
+					time = setInterval(function() {
+						right.click()
+					}, 3000)
+
+					pic.addEventListener('mouseenter', function() {
+						clearInterval(time)
+
+					})
+					pic.addEventListener('mouseleave', function() {
+						clearInterval(time)
+						time = setInterval(function() {
+							right.click()
+						}, 3000)
+					})
+				</script>
+			</div>
+		</div>
+
+	</body>
+</html>

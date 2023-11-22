@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		.page-jianjie {
+			background-image: url(./img/R-C5.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			width: 1460px;
+			height: 780px;
+			z-index: 0;
+			z-index: -10;
+		}
+
+		.page1 {
+			display: block;
+		}
+		
+		.fanhui{
+			width: 100px;
+			height: 50px;
+			border-radius: 10%;
+			cursor: pointer;
+		}
+		
+		.fanhui img{
+			width: 50px;
+		}
+
+		.title-jianjie {
+			text-align: center;
+			font-size: 50px;
+			font-family: 'Times New Roman', Times, serif;
+			position: relative;
+			top: -80px;
+		}
+		.jianjie-logo{
+			background-color: #797979;
+			position: absolute;
+			top: 100px;
+			left: 80px;
+			width: 300px;
+			height: 60px;
+			border-radius: 20%;
+		}
+		.jianjie-logo p{
+			color: aliceblue;
+			font-size: 20px;
+			text-align: center;
+		}
+
+		.renwu {
+			display: block;
+		}
+
+		.renwu img {
+			position: absolute;
+			top: 220px;
+			left: 50px;
+			width: 350px;
+		}
+
+		.jianjie {
+			background-color: aliceblue;
+			position: absolute;
+			left: 450px;
+			top: 100px;
+			height: 380px;
+			width: 300px;
+			opacity: 0;
+			border-radius: 5%;
+			-webkit-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			-moz-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			animation: rise 4s cubic-bezier(0.19,1,0.22,1).25s forwards;
+		}
+		@keyframes rise{
+		  0% {opacity: 0;transform: translate3d(0,100%,0);}
+		  50%{opacity: 1}
+		  100%{opacity: 1;transform: translate3d(0,450rpx,0);}
+		}
+
+		.fazhan {
+			background-color: aliceblue;
+			position: absolute;
+			top: 100px;
+			right: 30px;
+			height: 650px;
+			width: 650px;
+			opacity: 0;
+			border-radius: 2%;
+			-webkit-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			-moz-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			animation: rise 6s cubic-bezier(0.19,1,0.22,1).25s forwards;
+		}
+		@keyframes rise{
+		  0% {opacity: 0;transform: translate3d(0,100%,0);}
+		  50%{opacity: 1}
+		  100%{opacity: 1;transform: translate3d(0,450rpx,0);}
+		}
+
+		.box {}
+
+		.jianjie-img {}
+
+		.jianjie-img img {
+			position: absolute;
+			top: 500px;
+			left: 200px;
+			width: 450px;
+			height: 250px;
+			border-radius: 10%;
+		}
+
+		.left {
+			background-color: aliceblue;
+			position: absolute;
+			top: 600px;
+			left: 200px;
+			width: 50px;
+			opacity: 0.8;
+			cursor: pointer;
+			-webkit-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			-moz-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+		}
+
+		.right {
+			background-color: aliceblue;
+			position: absolute;
+			top: 600px;
+			left: 600px;
+			width: 50px;
+			opacity: 0.8;
+			cursor: pointer;
+			-webkit-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			-moz-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+		}
+	</style>
+	<body>
+		<div class="page-jianjie">
+			<div class="page1">
+				<a href="./index.html"><button class="fanhui"><img src="./img/返回.png" alt=""></button></a>
+				<p class="title-jianjie">PAGANI</p>
+				<div class="jianjie-logo"><p>奥拉西欧·帕加尼</p></div>
+				<div class="renwu">
+					<img src="./img/5bafa40f4bfbfbed3fe6569872f0f736aec31f9d.webp" alt="">
+				</div>
+				<div class="jianjie">
+					<p>个人简介：</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;奥拉西欧·帕加尼，原先是阿根廷F3赛车设计师，后来奔赴摩德纳城郊的超级跑车兰博基尼公司，从组装工人干起，后来他不仅参与兰博基尼著名的Diablo跑车设计，更率先指出碳纤维将是未来造车科技中最重要的材料。不到10年，他便成立自己的摩德纳设计工作室（ Modena Design），并在范吉奥的鼎力相助下，顺利获得AMG最顶尖发动机。
+					</p>
+				</div>
+				<div class="fazhan">
+					<p>发展历程：</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;奥拉西欧·帕加尼1955年11月10日出生在阿根廷的Gasilda。从小他就对汽车表现出了浓厚的兴趣。12岁那一年，他就制作出一辆银色GT车的模型，16岁又制造了一辆迷你摩托车。随后，他进入大学学习工业设计及机械工程。 1977年，帕加尼在阿根廷开设了自己的工作室，除了设计制造汽车，他还同时进行酒吧家具的设计与制造。第一年，他设计制造了一辆大篷车和拖车，第二年又制造了一辆完整的F2单座跑车。从这时起，帕加尼开始接其他大汽车公司的项目。他为雪佛兰皮卡设计了一辆野营车，为福特F100皮卡、雪佛兰夏安、丰田Hilux、标志504设计了玻璃纤维外壳。
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1982年，26岁的阿根廷F3赛车设计师奥拉西欧·帕加尼（Horacio Pagani）仍默默无闻 。但他接受5度F1世界冠军的生命贵人范吉奥（Juan Manuel Fangio）建议：“ 若你想制造世界最美的车，没别的选择，一定要去意大利的摩德纳（Modena）实现梦想。”
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;听了这建议，帕加尼直奔摩德纳城郊的超级跑车生产商兰博基尼公司，从组装工人干起，后来他不仅参与兰博基尼著名的Diablo跑车设计，更率先指出碳纤维将是 未来造车科技中最重要的材料，不到10年，他便成立自己的摩德纳设计工作室（Modena Design），并在范吉奥的鼎力相助下，顺利获得AMG最顶尖发动机。本来 这车预备称为Pagani Fangio，可惜车神范吉奥在车尚未问世前便过世，帕加尼不忍再用前辈名讳，1999年正式推出时，摘取“安第斯山脉的风”之意，取名Zonda，在媒体宣传中称为“风之子”。
+					</p>
+				</div>
+				<div class="box">
+					<div class="jianjie-img">
+						<img src="./images/0.jpg" alt="">
+					</div>
+				</div>
+				<img class="left" src="./img/后退.png" alt="">
+				<img class="right" src="./img/前进 (1).png" alt="">
+				<script>
+					// 定义对象
+					const obj = [{
+							url: './images/0.jpg'
+						},
+						{
+							url: './images/0 (1).jpg'
+						},
+						{
+							url:'./images/0 (2).jpg'
+						}
+
+					]
+					const img = document.querySelector('.jianjie-img img')
+					const right = document.querySelector('.right')
+					const left = document.querySelector('.left')
+					let pic = document.querySelector('.box')
+					let i = 0
+					let time = 0
+					right.addEventListener('click', function() {
+						i++
+						if (i >= obj.length) {
+							i = 0
+						}
+						img.src = obj[i].url
+					})
+
+					left.addEventListener('click', function() {
+						i--
+						if (i < 0) {
+							i = obj.length
+						}
+						img.src = obj[i].url
+					})
+
+					time = setInterval(function() {
+						right.click()
+					}, 3000)
+
+					pic.addEventListener('mouseenter', function() {
+						clearInterval(time)
+
+					})
+					pic.addEventListener('mouseleave', function() {
+						clearInterval(time)
+						time = setInterval(function() {
+							right.click()
+						}, 3000)
+					})
+				</script>
+			</div>
+		</div>
+
+	</body>
+</html>

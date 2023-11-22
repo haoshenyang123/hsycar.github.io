@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		.page-jianjie {
+			background-image: url(./img/R-C.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			width: 1460px;
+			height: 780px;
+			z-index: 0;
+			z-index: -10;
+		}
+
+		.page1 {
+			display: block;
+		}
+		
+		.fanhui{
+			width: 100px;
+			height: 50px;
+			border-radius: 10%;
+			cursor: pointer;
+		}
+		
+		.fanhui img{
+			width: 50px;
+		}
+
+		.title-jianjie {
+			text-align: center;
+			font-size: 50px;
+			font-family: 'Times New Roman', Times, serif;
+			position: relative;
+			top: -80px;
+		}
+		.jianjie-logo{
+			background-color: #797979;
+			position: absolute;
+			top: 100px;
+			left: 80px;
+			width: 300px;
+			height: 60px;
+			border-radius: 20%;
+		}
+		.jianjie-logo p{
+			color: aliceblue;
+			font-size: 20px;
+			text-align: center;
+		}
+
+		.renwu {
+			display: block;
+		}
+
+		.renwu img {
+			position: absolute;
+			top: 170px;
+			left: 100px;
+			width: 250px;
+		}
+
+		.jianjie {
+			background-color: aliceblue;
+			position: absolute;
+			left: 450px;
+			top: 100px;
+			height: 380px;
+			width: 300px;
+			opacity: 0;
+			border-radius: 5%;
+			-webkit-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			-moz-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			animation: rise 4s cubic-bezier(0.19,1,0.22,1).25s forwards;
+		}
+		@keyframes rise{
+		  0% {opacity: 0;transform: translate3d(0,100%,0);}
+		  50%{opacity: 1}
+		  100%{opacity: 1;transform: translate3d(0,450rpx,0);}
+		  }
+		.fazhan {
+			background-color: aliceblue;
+			position: absolute;
+			top: 100px;
+			right: 30px;
+			height: 650px;
+			width: 650px;
+			opacity: 0;
+			border-radius: 2%;
+			-webkit-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			-moz-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			animation: rise 6s cubic-bezier(0.19,1,0.22,1).25s forwards;
+		}
+		@keyframes rise{
+		  0% {opacity: 0;transform: translate3d(0,100%,0);}
+		  50%{opacity: 1}
+		  100%{opacity: 1;transform: translate3d(0,450rpx,0);}
+		}
+
+		.houtui {
+			position: absolute;
+			top: 400px;
+			width: 50px;
+			cursor: pointer;
+		}
+
+		.qianjin {
+			position: absolute;
+			right: 0px;
+			top: 400px;
+			width: 50px;
+			cursor: pointer;
+		}
+
+		.box {}
+
+		.jianjie-img {}
+
+		.jianjie-img img {
+			position: absolute;
+			top: 500px;
+			left: 200px;
+			width: 450px;
+			height: 250px;
+			border-radius: 10%;
+		}
+
+		.left {
+			background-color: aliceblue;
+			position: absolute;
+			top: 600px;
+			left: 200px;
+			width: 50px;
+			opacity: 0.8;
+			cursor: pointer;
+			-webkit-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			-moz-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+		}
+
+		.right {
+			background-color: aliceblue;
+			position: absolute;
+			top: 600px;
+			left: 600px;
+			width: 50px;
+			opacity: 0.8;
+			cursor: pointer;
+			-webkit-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			-moz-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+		}
+	</style>
+	<body>
+		<div class="page-jianjie">
+			<div class="page1">
+				<a href="./index.html"><button class="fanhui"><img src="./img/返回.png" alt=""></button></a>
+				<p class="title-jianjie">BUGATTI</p>
+				<div class="jianjie-logo"><p>埃托里·布加迪</p></div>
+				<div class="renwu" id="page1">
+					<img src="./img/91ef76c6a7efce1b6d826e40a551f3deb58f658b.webp" alt="">
+				</div>
+				<div class="jianjie">
+					<p>个人简介：</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;埃托里·布加迪自幼在美术学校学习，他特别爱好驾驶汽车，从17岁起就参加赛车活动。幼年时期，他就建造了布加迪T1-T5车型，并参加了许多赛事。
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在1902年随全家搬迁至法国ALSACE的NIEDERBRONN，并于1904年开始和当地的一家汽车公司合作，为其研发生产汽车，直到1909年，共计生产了T6-T9等型号。随后埃托里·布加迪携妻儿迁至ALSACE的MOLSHEIM，建立了布加迪汽车工厂，在这里，成熟的T13车型开始大规模生产。
+					</p>
+				</div>
+				<div class="fazhan">
+					<p>发展历程：</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MOLSHEIM依旧作为布加迪总部所在地。在1914年研制出装用马蹄形散热器护栅为特征的、钢丝辐轮式车轮的T17型车后，这种形状的散热格栅随后成为了布加迪的风格。之后布加迪汽车逐步发展壮大，并活跃于全球各大赛事。
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第一次世界大战期间，埃托里·布加迪在美国为杜森伯格（Dusenberg）汽车公司设计制造了直列式八缸、功率410HP的航空发动机。第一次世界大战以后，从1920年起又先后研制出装用四缸16气阀（四气阀机构的创始者），小型发动机的赛车的T22型和T23型，并且在法国莱芒24小时汽车大赛和勃雷西亚车赛中夺魁
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;随着世界经济的大萧条以及两次世界大战的对布加迪汽车产生了重大影响。尤其是在第二次世界大战期间，德军占领了法国的布加迪工厂，在1939年和1940年，埃托里·布加迪的长子和父亲先后离世，经营困难的布加迪工厂也被变卖。同时埃托里·布加迪本人不屈服于入侵者的威慑，坚持意大利国籍，因此受到迫害。
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纵横车坛将近半个世纪的一代著名汽车设计师于1947年也寂然逝去。至此，布加迪共计生产了T1-T101等一百个车型</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;布加迪工厂仍旧维系着惨淡的经营，并主要生产T101型车，直到1956年彻底停产。在1910-1956这47年间，布加迪共生产了大约8000台汽车。
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;布加迪车是古典老式车中保有量最多的汽车之一，以布加迪为品牌的车型在世界多个著名汽车博物馆中可以看到，而且性能上乘，车身造型新颖、流畅，直至发动机的配置都独具特色。
+					</p>
+				</div>
+				<div class="box">
+					<div class="jianjie-img">
+						<img src="./images/359b033b5bb5c9ea673cd24bd439b6003bf3b34f.webp" alt="">
+					</div>
+				</div>
+				<img class="left" src="./img/后退.png" alt="">
+				<img class="right" src="./img/前进 (1).png" alt="">
+				<script>
+					// 定义对象
+					const obj = [{
+							url: './images/359b033b5bb5c9ea673cd24bd439b6003bf3b34f.webp'
+						},
+						{
+							url: './images/7c1ed21b0ef41bd50b46f35c50da81cb39db3d04.webp'
+						},
+						{
+							url:'./images/4a36acaf2edda3cc99ae1f8800e93901203f92d4.webp'
+						}
+
+					]
+					const img = document.querySelector('.jianjie-img img')
+					const right = document.querySelector('.right')
+					const left = document.querySelector('.left')
+					let pic = document.querySelector('.box')
+					let i = 0
+					let time = 0
+					right.addEventListener('click', function() {
+						i++
+						if (i >= obj.length) {
+							i = 0
+						}
+						img.src = obj[i].url
+					})
+
+					left.addEventListener('click', function() {
+						i--
+						if (i < 0) {
+							i = obj.length
+						}
+						img.src = obj[i].url
+					})
+
+					time = setInterval(function() {
+						right.click()
+					}, 3000)
+
+					pic.addEventListener('mouseenter', function() {
+						clearInterval(time)
+
+					})
+					pic.addEventListener('mouseleave', function() {
+						clearInterval(time)
+						time = setInterval(function() {
+							right.click()
+						}, 3000)
+					})
+				</script>
+			</div>
+		</div>
+
+	</body>
+</html>

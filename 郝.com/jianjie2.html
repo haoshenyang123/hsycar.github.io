@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		.page-jianjie {
+			background-image: url(./img/R-C6.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			width: 1460px;
+			height: 780px;
+			z-index: 0;
+			z-index: -10;
+		}
+
+		.page1 {
+			display: block;
+		}
+		
+		.fanhui{
+			width: 100px;
+			height: 50px;
+			border-radius: 10%;
+			cursor: pointer;
+		}
+		
+		.fanhui img{
+			width: 50px;
+		}
+
+		.title-jianjie {
+			text-align: center;
+			font-size: 50px;
+			font-family: 'Times New Roman', Times, serif;
+			position: relative;
+			top: -80px;
+		}
+		.jianjie-logo{
+			background-color: #797979;
+			position: absolute;
+			top: 100px;
+			left: 80px;
+			width: 300px;
+			height: 60px;
+			border-radius: 20%;
+		}
+		.jianjie-logo p{
+			color: aliceblue;
+			font-size: 20px;
+			text-align: center;
+		}
+
+		.renwu {
+			display: block;
+		}
+
+		.renwu img {
+			position: absolute;
+			top: 220px;
+			left: 50px;
+			width: 350px;
+		}
+
+		.jianjie {
+			background-color: aliceblue;
+			position: absolute;
+			left: 450px;
+			top: 100px;
+			height: 380px;
+			width: 300px;
+			opacity: 0;
+			border-radius: 5%;
+			-webkit-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			-moz-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			animation: rise 4s cubic-bezier(0.19,1,0.22,1).25s forwards;
+		}
+		@keyframes rise{
+		  0% {opacity: 0;transform: translate3d(0,100%,0);}
+		  50%{opacity: 1}
+		  100%{opacity: 1;transform: translate3d(0,450rpx,0);}
+		}
+
+		.fazhan {
+			background-color: aliceblue;
+			position: absolute;
+			top: 100px;
+			right: 30px;
+			height: 650px;
+			width: 650px;
+			opacity: 0;
+			border-radius: 2%;
+			-webkit-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			-moz-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			animation: rise 6s cubic-bezier(0.19,1,0.22,1).25s forwards;
+		}
+		@keyframes rise{
+		  0% {opacity: 0;transform: translate3d(0,100%,0);}
+		  50%{opacity: 1}
+		  100%{opacity: 1;transform: translate3d(0,450rpx,0);}
+		}
+
+		.houtui {
+			position: absolute;
+			top: 400px;
+			width: 50px;
+			cursor: pointer;
+		}
+
+		.qianjin {
+			position: absolute;
+			right: 0px;
+			top: 400px;
+			width: 50px;
+			cursor: pointer;
+		}
+
+		.box {}
+
+		.jianjie-img {}
+
+		.jianjie-img img {
+			position: absolute;
+			top: 500px;
+			left: 200px;
+			width: 450px;
+			height: 250px;
+			border-radius: 10%;
+		}
+
+		.left {
+			background-color: aliceblue;
+			position: absolute;
+			top: 600px;
+			left: 200px;
+			width: 50px;
+			opacity: 0.8;
+			cursor: pointer;
+			-webkit-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			-moz-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+		}
+
+		.right {
+			background-color: aliceblue;
+			position: absolute;
+			top: 600px;
+			left: 600px;
+			width: 50px;
+			opacity: 0.8;
+			cursor: pointer;
+			-webkit-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			-moz-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+		}
+	</style>
+	<body>
+		<div class="page-jianjie">
+			<div class="page1">
+				<a href="./index.html"><button class="fanhui"><img src="./img/返回.png" alt=""></button></a>
+				<p class="title-jianjie">FERRARI</p>
+				<div class="jianjie-logo"><p>恩佐·法拉利</p></div>
+				<div class="renwu" id="page1">
+					<img src="./img/b999a9014c086e0608c908ea0a087bf40ad1cb29.webp" alt="">
+				</div>
+				<div class="jianjie">
+					<p>个人简介：</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;恩佐·法拉利（1898——1988）毕其一生，致力于提高赛车的性能以不断流取桂冠。他是一个孤僻的人，却能够激励周围每一个人，让他们为了他的目标而各显其能。因为哺育了他，他的故乡在某种意义上，已经成为全球高性能汽车领域的首府。
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1898年2月18日，恩佐·法拉利诞生于意大利小叙区得纳一个小钣金工厂主家庭。父亲开一间五金店，也是小城第一个拥有汽车的人。
+					</p>
+				</div>
+				<div class="fazhan">
+					<p>发展历程：</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10岁时，父亲带他去博洛尼亚看赛车比克·菲利斯·纳扎罗呼啸着冲过终点的镜头，在年轻的恩佐心中留下深深烙印。
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1918年战争结束，恩佐回到家中试图到菲亚特谋一份工作，结果令他失望，都灵没有空缺。尽管当时经济很不景气，甚至自由贸易还被禁止，但恩佐对汽车的热爱，使他确信自己可以在这个领域取得成功。那年年底，他在都灵找到一份试车员的工作。
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;很快，恩佐又跳槽到米兰的C.M.N公司，并从试车员晋级为赛车手。1919年10月，他第一次参加比赛，在帕尔马举行的3升以下级比赛中。他驾驶C.M.N2.3升4缸赛车获得第四名。同年11月，他进入第23届塔加·弗洛里大赛，但是因为水箱故障在路上耽误了40分钟，最终没能取得太好成绩。
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1921年恩佐跳槽至阿尔法·罗密欧，作为车手，他不仅要不断参加比赛，而且要对赛车性能的改进提出自己的意见。同年9月，在布西西亚举行的绅士大奖赛前夕。他遭遇了职业生涯的第一次车祸，当时一群羊从路上穿越，为了避让，他冲出赛道。</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1939年11月，恩佐在一项规定他今后4年中在赛车或者其他与资车有关的事业中不得使用“法拉利”品牌的协议上签字后，离开了阿尔法·罗密欧。但是谁都知道，要不了20年，他就会率领自己的车队重新杀回来，并夺取所有荣誉
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;恩佐的热情主宰了一切，他总是能令他的团队为他的目标而努力、献身。他总是主宰着他的帝国。他从不回忆，总是不断探索新的挑战。他善变而苛刻，许多杰出工程师被迫离开他的车队，然而总有更多人渴望加入。每当比赛获胜，他要求雇员不要骄傲和放松，每当比赛失利，他会鼓励他们加倍努力。经年累月，他的车队、他的赛车缔造了一个又一个神话。在初期，他的赛车都是为比赛而特制的，随着事业的不断推进和全球经济的腾飞，仅供巡回赛的法拉利跑车，也开始受到普通消费者的追捧，并收到雪片般飞来的订单。
+					</p>
+				</div>
+				<div class="box">
+					<div class="jianjie-img">
+						<img src="./images/622762d0f703918fa0ec6b07e373319759ee3c6d6ee5.webp" alt="">
+					</div>
+				</div>
+				<img class="left" src="./img/后退.png" alt="">
+				<img class="right" src="./img/前进 (1).png" alt="">
+				<script>
+					// 定义对象
+					const obj = [{
+							url: './images/622762d0f703918fa0ec6b07e373319759ee3c6d6ee5.webp'
+						},
+						{
+							url: './images/0df3d7ca7bcb0a46f21fc6f4d92de1246b600d3301e5.webp'
+						},
+						{
+							url:'./images/d788d43f8794a4c27d1ed4e5bcba0cd5ad6edcc493e5.webp'
+						}
+
+					]
+					const img = document.querySelector('.jianjie-img img')
+					const right = document.querySelector('.right')
+					const left = document.querySelector('.left')
+					let pic = document.querySelector('.box')
+					let i = 0
+					let time = 0
+					right.addEventListener('click', function() {
+						i++
+						if (i >= obj.length) {
+							i = 0
+						}
+						img.src = obj[i].url
+					})
+
+					left.addEventListener('click', function() {
+						i--
+						if (i < 0) {
+							i = obj.length
+						}
+						img.src = obj[i].url
+					})
+
+					time = setInterval(function() {
+						right.click()
+					}, 3000)
+
+					pic.addEventListener('mouseenter', function() {
+						clearInterval(time)
+
+					})
+					pic.addEventListener('mouseleave', function() {
+						clearInterval(time)
+						time = setInterval(function() {
+							right.click()
+						}, 3000)
+					})
+				</script>
+			</div>
+		</div>
+
+	</body>
+</html>

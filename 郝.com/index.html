@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<style>
+		.page {
+			background-image: url(./images/R-C.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			width: 1460px;
+			height: 3000px;
+			z-index: 0;
+			z-index: -10;
+		}
+
+		.user {
+			display: flex;
+			align-items: center;
+			position: relative;
+			left: 11px;
+			background-color: white;
+			width: 1436px;
+			height: 80px;
+			border-radius: 0% 0% 20% 20%;
+			z-index: 1;
+			opacity: 0.3;
+			border: 3px solid black;
+			-webkit-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			-moz-box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+			box-shadow: 0px 10px 9px -5px rgba(0, 0, 0, 0.32);
+		}
+
+		.user2 {
+			display: flex;
+			align-items: center;
+			position: relative;
+			top: -80px;
+			left: 11px;
+			width: 1436px;
+			height: 80px;
+			z-index: 1;
+		}
+
+		.img1 {
+			position: absolute;
+			top: 5px;
+			left: 150px;
+			width: 60px;
+			height: 60px;
+			border-radius: 100%;
+			opacity: 1;
+		}
+
+		.p1 {
+			margin-left: 300px;
+		}
+
+		.p2 {
+			margin-left: 160px;
+		}
+
+		.yinyue {
+			position: absolute;
+			right: 100px;
+			top: 90px;
+			border-radius: 100%;
+			transform: rotate(0deg);
+			animation: rotate-image 5s linear infinite;
+		}
+
+		.beijingmusic {
+			position: absolute;
+			top: 155px;
+			right: 10px;
+			width: 240px;
+			height: 32px;
+
+		}
+
+		@keyframes rotate-image {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+		.logo{
+			width: 150px;
+			height: 400px;
+			position: absolute;
+			top: 200px;
+			position: fixed;
+			-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+		}
+		.logo2{
+			width: 150px;
+			height: 100px;
+		}
+		.logo2 img{
+			width: 150px;
+			height: 100px;
+			border-radius: 0% 10% 10% 0%;
+			
+		}
+		.logo3{
+			width: 150px;
+			height: 100px;
+		}
+		.logo3 img{
+			width: 150px;
+			height: 100px;
+			border-radius: 0% 10% 10% 0%;
+		}
+		.logo4{
+			width: 150px;
+			height: 100px;
+		}
+		.logo4 img{
+			width: 150px;
+			height: 100px;
+			border-radius: 0% 10% 10% 0%;
+		}
+		.logo5{
+			width: 150px;
+			height: 100px;
+		}
+		.logo5 img{
+			width: 150px;
+			height: 100px;
+			border-radius: 0% 10% 10% 0%;
+		}
+		.neirong{
+			background-color: #61747f;	
+			position: relative;
+			left: 210px;
+			width: 80vw;
+			height: 2700px;
+			opacity: 0.95;
+			border: 1px solid black;
+			z-index: 0;
+		}
+		.daohang {
+			display: inline-block;
+			position: relative;
+			top: 30px;
+			left: 20px;
+			background-color: #cfdaff;
+			width: 240px;
+			height: 638px;
+			-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			opacity: 1;
+			border: 1px solid black;
+			opacity: 0.95;
+		}
+		.daohang img{
+			position: relative;
+			left: 20px;
+			top: 10px;
+			width: 200px;
+			height: 150px;
+			-webkit-box-shadow: 0px 2px 32px 5px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 2px 32px 5px rgba(0,0,0,0.75);
+			box-shadow: 0px 2px 32px 5px rgba(0,0,0,0.75);
+		}
+		.daohang2 {
+			display: inline-block;
+			position: absolute;
+			top: 700px;
+			right: 20px;
+			background-color: #cfdaff;
+			width: 240px;
+			height: 638px;
+			-webkit-box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			border: 1px solid black;
+			opacity: 0.95;
+		}
+		.daohang2 img{
+			position: relative;
+			left: 20px;
+			top: 10px;
+			width: 200px;
+			height: 150px;
+			-webkit-box-shadow: 0px 2px 32px 5px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 2px 32px 5px rgba(0,0,0,0.75);
+			box-shadow: 0px 2px 32px 5px rgba(0,0,0,0.75);
+			}
+		.daohang3 {
+			display: inline-block;
+			position: absolute;
+			top: 1370px;
+			left: 20px;
+			background-color: #cfdaff;
+			width: 240px;
+			height: 638px;
+			-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			border: 1px solid black;
+			opacity: 0.95;
+		}
+		.daohang3 img{
+			position: relative;
+			left: 20px;
+			top: 10px;
+			width: 200px;
+			height: 150px;
+			-webkit-box-shadow: 0px 2px 32px 5px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 2px 32px 5px rgba(0,0,0,0.75);
+			box-shadow: 0px 2px 32px 5px rgba(0,0,0,0.75);
+			}
+		.daohang4 {
+			display: inline-block;
+			position: absolute;
+			top: 2040px;
+			right: 20px;
+			background-color: #cfdaff;
+			width: 240px;
+			height: 638px;
+			-webkit-box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			border: 1px solid black;
+			opacity: 0.95;
+		}
+		.daohang4 img{
+			position: relative;
+			left: 20px;
+			top: 10px;
+			width: 200px;
+			height: 150px;
+			-webkit-box-shadow: 0px 2px 32px 5px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 2px 32px 5px rgba(0,0,0,0.75);
+			box-shadow: 0px 2px 32px 5px rgba(0,0,0,0.75);
+			}
+		.title{
+			text-align: center;
+			font-size: 30px;
+			font-family: 'Times New Roman', Times, serif;
+			position: relative;
+			left: 270px;
+			top: -630px;
+			width: 900px;
+			height: 50px;
+			z-index: 10;
+			}
+		.txt {
+			display: inline-block;
+			position: absolute;
+			background-image: url(./img/R-C3.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 900px;
+			height: 638px;
+			left: 270px;
+			top: 30px;
+			-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			opacity: 0.8;
+			overflow-x: scroll;
+		}
+		.demo{
+			display: inline-block;
+			float: left;
+			position: relative;
+			left: 50px;
+			top: 50px;
+			background-color: #fff;
+			width: 300px;
+			height: 500px;
+			border-radius: 20% 20% 0% 0%;
+			-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+		}
+		.demo img{
+			border-radius: 20% 20% 0% 0%;
+		}
+		.demo2{
+			display: inline-block;
+			float: left;
+			position: relative;
+			left: 150px;
+			top: 50px;
+			background-color: #fff;
+			width: 300px;
+			height: 500px;
+			border-radius: 20% 20% 0% 0%;
+			-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+		}
+		.demo2 img{
+			border-radius: 20% 20% 0% 0%;
+		}
+		.demo3{
+			display: inline-block;
+			float: left;
+			position: relative;
+			left: 250px;
+			right: 50px;
+			top: 50px;
+			background-color: #fff;
+			width: 300px;
+			height: 500px;
+			border-radius: 20% 20% 0% 0%;
+			-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+		}
+		.demo3 img{
+			border-radius: 20% 20% 0% 0%;
+		}
+		.txt img{
+			width: 300px;
+			height: 200px;
+		}
+		.title2{
+			text-align: center;
+			font-size: 30px;
+			font-family: 'Times New Roman', Times, serif;
+			position: relative;
+			top: -40px;
+			text-align: center;
+			position: relative;
+			right: 20px;
+			z-index: 10;
+			width: 900px;
+			height: 50px;
+			}
+		.txt2 {
+			display: inline-block;
+			position: absolute;
+			background-image: url(./img/R-C1.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 900px;
+			height: 638px;
+			right: 270px;
+			top: 700px;
+			-webkit-box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			opacity: 0.8;
+			overflow-x: scroll;
+		}
+		.txt2 img{
+			width: 300px;
+			height: 200px;
+		}
+		.title3{
+			text-align: center;
+			font-size: 30px;
+			font-family: 'Times New Roman', Times, serif;
+			text-align: center;
+			position: relative;
+			left: 270px;
+			top: 540px;
+			z-index: 10;
+			width: 900px;
+			height: 50px;
+			}
+		.txt3 {
+			display: inline-block;
+			position: absolute;
+			background-image: url(./img/R-C2.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 900px;
+			height: 638px;
+			left: 270px;
+			top: 1370px;
+			-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			opacity: 0.8;
+			overflow-x: scroll;
+		}
+		.txt3 img{
+			width: 300px;
+			height: 200px;
+		}
+		.title4{
+			text-align: center;
+			font-size: 30px;
+			font-family: 'Times New Roman', Times, serif;
+			text-align: center;
+			position: relative;
+			right: 20px;
+			top: 1135px;
+			width: 900px;
+			height: 50px;
+			z-index: 10;
+			}
+		.txt4 {
+			display: inline-block;
+			position: absolute;
+			background-image: url(./img/R-CA.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 900px;
+			height: 638px;
+			right: 270px;
+			top: 2040px;
+			-webkit-box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+			opacity: 0.8;
+			overflow-x: scroll;
+		}
+		.txt4 img{
+			width: 300px;
+			height: 200px;
+		}
+		.biaoqing{
+			position: absolute;
+			top: 150px;
+			left: 20px;
+			width: 50px;
+			height: 50px;
+			position: fixed;
+		}
+		.biaoqing2{
+			position: absolute;
+			top: 150px;
+			left: 90px;
+			width: 50px;
+			height: 50px;
+			position: fixed;
+		}
+	</style>
+	<body>
+		<div class="page">
+			<div class="user">
+			</div>
+			<div class="user2">
+				<a href="./denglu.html"><img class="img1" src="./images/2c2c53e10fb6b50aa97f8545f92cdaa.jpg" alt=""></a>
+				<audio class="beijingmusic" src="./audios/纯音乐 - 遇见 (钢琴版).mp3" controls autoplay ></audio>
+			</div>
+			<img class="yinyue" src="./images/音乐.png" alt="">
+			<div class="logo">
+				<div class="logo2"><a href="./jianjie.html"><img src="./images/26168453_140429629100_2.jpg" alt=""></a></div>
+				<div class="logo3"><a href="./jianjie1.html"><img src="./images/R-C (4).jpg" alt=""></a></div>
+				<div class="logo4"><a href="./jianjie2.html"><img src="./images/40917255_1415945123482_720x540.jpg" alt=""></a></div>
+				<div class="logo5"><a href="./jianjie3.html"><img src="./images/OIP-C.jpg" alt=""></a></div>
+			</div>
+			<img class="biaoqing" src="./images/哇.png" alt="">
+			<img class="biaoqing2" src="./images/左哼哼.png" alt="">
+		<div class="neirong">
+			<div class="daohang">
+				<img style="opacity:1;" src="./images/26168453_140429629100_2.jpg" alt="">
+				<p style="opacity:1;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 布加迪（Bugatti），起源于意大利。早期的布加迪品牌将艺术与技术相融合，并在赛场上战绩辉煌，但在第二次世界大战后渐渐衰落并几经转手，1998年大众集团收购并复兴了布加迪品牌，布加迪的总部设立在法国的莫尔塞姆。
+</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 布加迪当时是以精巧的造车技术出名。是由意大利人埃多尔·布加迪（Ettore Bugatti）在1909年创造的，专门生产运动跑车和高级豪华轿车</p>
+			</div>
+			<div class="title"><p>BUGATTI</p></div>
+			<div class="txt">
+				<div class="demo"><img style="opacity:1;" src="./images/359b033b5bb5c9ea673cd24bd439b6003bf3b34f.webp" alt=""><p style="text-align: center;">veyron</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;布加迪于1998年被大众收购后，由大众总裁皮耶西提出的第一个布加迪项目，立志于打造一款世界上气缸数最多，极速最快，最能体现人类造车科技水平的计划。由1999年推出的布加迪EB18.4veyron概念车演变而来， 布加迪EB16.4威航是自从EB110之后，第一款真正挂上布加迪椭圆形红色厂徽的量产车，也是布加迪第二度复活后的开山之作。</p></div>
+				<div class="demo2"><img src="./images/7c1ed21b0ef41bd50b46f35c50da81cb39db3d04.webp" alt=""><p style="text-align: center;">Galibier</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;布加迪于2009年推出的一款四门Coupe概念车，外形设计意在向布加迪Type 57致敬，将于2013年正式投产。Bugatti16C Galibier 使用布加迪的8.0 升16气缸发动机，不过相关的数据可能就要比威龙的747千瓦的最大输出功率一级1250牛顿·米的扭矩峰值要小一些了。至于要小多少，布加迪官方则没有在此次的发布之中透露。</p></div>
+				<div class="demo3"><img src="./images/4a36acaf2edda3cc99ae1f8800e93901203f92d4.webp" alt=""><p style="text-align: center;">Bugatti veyron Grandsport</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;布加迪威航的衍生版本，威航敞篷版，威航grand sport。威航GrandSport的动力系统与威航16.4规格相同。W16发动机采用4涡轮增压技术，配合7速DSG变速器，在2200转就能达到1250牛·米的扭矩。自然，在2.7秒内完成百公里加速对威航GrandSport来说是区区小事。与之相对的，这部速度机器100到0公里的制动距离仅为31.4米，只需短短2.3秒。这是由于威航GrandSport采用了尺寸达400毫米的碳纤陶瓷刹车盘和前8活塞制动卡钳。</p></div>
+			</div>
+			<div class="daohang2">
+				<img src="./images/R-C (4).jpg" alt="">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;帕加尼（Pagani）是一家世界知名的超级跑车制造商，公司创始人 为奥拉西欧·帕加尼（Horacio Pagani）。与大名鼎鼎的法拉利一样，诞生于素有超跑之乡美誉的意大利小镇摩德纳（Modena）。</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;帕加尼所生产的超级跑车以极致的性能、大量采用纯手工打造的精湛工艺、昂贵的售价以及订单生产的稀有产量闻名于世。旗下代表车系有1999年正式发布的帕加尼Zonda、2011年推出的第二个全新车系帕加尼Huayra等。</p>
+			</div>
+			<div class="title2"><p>PAGANI</p></div>
+			<div class="txt2">
+				<div class="demo"><img src="./images/0.jpg" alt=""><p style="text-align: center;">帕加尼风之子F Clubsport</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;来自于帕加尼品牌的具有传奇意味的超级跑车——风之子F Clubsport终极版的车型图。融合了大量流行设计元素，整车运动感和力量感更强，新款车型在动力方面也大步提升。帕加尼风之子F Clubsport超级跑车“最终版”外形野性十足，有着世界独一无二的骨感美。在外观方面采用了黑色碳纤维车体，而内饰部分则采用了大面积的银色配饰。</p></div>
+				<div class="demo2"><img src="./images/0 (1).jpg" alt=""><p style="text-align: center;">Huayra</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;帕加尼全新一代超跑C9正式定名为Huayra，名称源于南美西班牙语飓风，媒体推广则成称为风神。Huayra接替前代Zonda成为帕加尼公司的旗舰车型。同时加入了前自动挡风板和后自动挡风板。Huayra于2012年3月的日内瓦车展上首发亮相，并开始接受预定，该车售价在100万欧元以上。帕加尼推出Huayra的创举，再次满足了高端消费的需求</p></div>
+				<div class="demo3"><img src="./images/0 (2).jpg" alt=""><p style="text-align: center;">Pagani Zonda</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;正如一般的汽车，Zonda的造型同样经过风洞测试。它的深下颔进气坝、车尾扰流板和气流扩散器，可以在297公里/小时的高速时对车身产生500公斤的下压力，加上车身比重均匀，Zonda即使在超过300公里/小时的超高时速下，仍然可以四平八稳。</p></div>
+			</div>
+			<div class="daohang3">
+				<img src="./images/40917255_1415945123482_720x540.jpg" alt="">
+				<p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;法拉利是举世闻名的赛车和运动跑车的生产厂家，总部位于意大利马拉内罗（Maranello）。由恩佐·法拉利（Enzo Ferrari）于1947年创办，主要制造一级方程式赛车、赛车及高性能跑车。</p></p>
+			</div>
+			<div class="title3"><p>FERRARI</p></div>
+			<div class="txt3">
+				<div class="demo"><img src="./images/622762d0f703918fa0ec6b07e373319759ee3c6d6ee5.webp" alt=""><p style="text-align: center;">Portofino M</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基于Portofino跑车打造的全新跃马2+ GT Spider车型，法拉利Portofino M命名中的字母“M”源自意大利单词 “modificata”，意为“升级（Modified） ”，强调技术革新、性能增强，并赋予诸多重要新功能，包括全新8速变速箱和带有“RACE”模式的五档Manettino控制旋钮等。此外，车型搭载3.9T V8双涡轮增压发动机，可在7500转/分时产生高达620 cv的输出功率，百公里加速仅需3.45秒.</p></div>
+				<div class="demo2"><img src="./images/0df3d7ca7bcb0a46f21fc6f4d92de1246b600d3301e5.webp" alt=""><p style="text-align: center;">SF90 Spider</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SF90 Spider是法拉利旗下首款插电式混合动力敞篷跑车，拥有极致性能表现与非凡创新科技，沿袭SF90 Stradale车型的超跑参数及巅峰性能表现，同时采用法拉利最新的可折叠式硬顶敞篷设计，带来更纯粹的驾驶乐趣和更强大的多功能性。车型搭载先进的插电式混合动力系统，全新车型的最大总输出功率提升至惊人的1000cv。</p></div>
+				<div class="demo3"><img src="./images/d788d43f8794a4c27d1ed4e5bcba0cd5ad6edcc493e5.webp" alt=""><p style="text-align: center;">812 GTS</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;距离上一款采用前置V12发动机布局的跃马敞篷车型亮相整整50年后，法拉利812 GTS可折叠式硬顶敞篷跑车于2019年耀目问世。该车型的发布标志着跃马历史上这一系列重磅车型的荣耀回归。812 GTS搭载法拉利性能卓越的自然吸气式V12发动机，最大输出功率可达800cv，并在3秒内可完成0-100公里/时的加速，0-200公里/时的加速时间仅需8.3秒，</p></div>
+			</div>
+			<div class="daohang4">
+				<img src="./images/OIP-C.jpg" alt="">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;兰博基尼（Automobili Lamborghini S.p.A.）是一家意大利汽车生产商，全球顶级跑车制造商及欧洲奢侈品标志之一，公司坐落于意大利圣亚加塔·波隆尼（Sant'Agata Bolognese），由费鲁吉欧·兰博基尼在1963年创立。</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;兰博基尼早期由于经营不善，于1980年破产；数次易主后，1998年归入奥迪旗下，现为大众集团（Volkswagen Group）旗下品牌之一。兰博基尼的标志是一头充满力量、正向对方攻击的斗牛，与大马力高性能跑车的特性相契合，同时彰显了创始人斗牛般不甘示弱的个性。</p>
+			</div>
+			<div class="title4"><p>LAMBORGHINI</p></div>
+			<div class="txt4">
+				<div class="demo"><img src="./images/bba1cd11728b4710ace479e2c2cec3fdfd0323d0.webp" alt=""><p style="text-align: center;">Estoque</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estoque是兰博基尼于2009年十月份的巴黎车展上揭幕的一款概念车，这是一款四门车型，兰博基尼史上第一款四门车型，这款车的目标指向奔驰CLS与奥迪A7，保时捷panamera等新兴的四门跑车市场。不过其售价因为是一款兰博基尼估计不会低于15万英磅。这款四门轿跑车将提供多种类型的发动机，其中包括柴油机。</p></div>
+				<div class="demo2"><img src="./images/3812b31bb051f81900a3b267dbb44aed2e73e71d.webp" alt=""><p style="text-align: center;">Aventador</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aventador是兰博基尼于2011年日内瓦车展推出的一款车型，以代替兰博基尼上一代产品Murcielago。车身尺寸方面，轴距为2700mm。轮胎规格上，前轮为255/35 R19，后轮为335/30 R20。该车重量为1575kg，前后43：57的配重比。制动系统上，前轮为6活塞卡钳搭配400*38mm的碳纤维增强陶瓷刹车片，后轮则为4活塞卡钳搭配380*38mm碳纤维增强陶瓷刹车片。</p></div>
+				<div class="demo3"><img src="./images/a2cc7cd98d1001e9e95f8823ba0e7bec54e797bf.webp" alt=""><p style="text-align: center;">Veneno Roadster</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;兰博基尼Veneno Roadster基于硬顶版改进而来，两者在造型方面有着很高的相似度，不过敞篷版整车的前脸设计更显前卫与激进。有消息称Roadster双座敞篷版将采用拆装式碳纤维车顶板。Veneno的车身也选择了碳纤维材质，前后副车架使用铝合金以控制整备质量。</p></div>
+			</div>
+		</div>		
+		</div>
+		
+	</body>
+</html>
